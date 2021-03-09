@@ -3,39 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <title>相沢僚一　個展</title>
-        <script src = "https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <style>
+            
             body {
             text-align: center;
             font-size: 16px;
            }
+
             .title {
                 font-size: 2em;
             }
-            #section-1{
-                background-color: lightgreen;
-            }
-            .messages > p:nth-of-type(1) {
-                font-size: 1.5em;
-                color:black;
-            }
-            .messages > p:nth-of-type(2) {
-                font-size: 2em;
-                color:darkred;
-            }
-            .messages > p:nth-of-type(3) {
-                font-size: 3em;
-                color:red;
+            
+            a-scene {
+                display: block;
+                height: calc(100vh - 100px);
+                width: 100%;
             }
         </style> 
     </head>
     <body>
             <h1 class="title">相沢僚一　個展</h1>
-            <a-scene>
-                <a-assets>
-                    <img id = "tex1" src = "https://static.wixstatic.com/media/8d1f2c_3273a887fa8148378ff02589d4fca976~mv2_d_2504_3116_s_4_2.jpg">
-                </a-assets>
-                <a-box position = "0 1.5 -3" width = "2" height = "2" depth = "2" src = "#tex1"></a-box>
-            </a-scene>
+                <a-scene embedded>
+                    <a-assets>
+                        <img id="tex1" src="https://static.wixstatic.com/media/8d1f2c_3273a887fa8148378ff02589d4fca976~mv2_d_2504_3116_s_4_2.jpg">
+                    </a-assets>
+                    <a-box position="0 1.5 -3" width="2" height="2" depth="2" src="#tex1"></a-box>
+                </a-scene>
     </body>
 </html>
